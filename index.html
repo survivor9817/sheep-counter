@@ -1,0 +1,25 @@
+<html dir="rtl">
+  <head>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>گوسفند شمار</h1>
+      <h3>عصای دست کمک‌چوپان</h3>
+      <h2 id="count-el">0</h2>
+
+      <button id="increment-btn" onclick="countSheep(1)">+۱</button>
+      <button id="decrement-btn" onclick="countSheep(-1)">-۱</button>
+      <button id="save-btn" onclick="save('vorood'); updateFinal();">
+        وارد شدند
+      </button>
+      <button id="save-btn" onclick="save('khorooj'); updateFinal();">
+        خارج شدند
+      </button>
+      <p>تعداد گوسفندان وارد شده: <span id="save-el"></span></p>
+      <p>مجموع گوسفندان داخل آغل: <span id="final-el"></span></p>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
